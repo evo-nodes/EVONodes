@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=EVO_Nodes Core
+Comment=EVO_Nodes P2P Cryptocurrency
+Comment[fr]=EVO_Nodes, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=EVO_Nodes, eşten eşe kriptografik sanal para birimi
+Exec=evo_nodes-qt %u
+Terminal=false
+Type=Application
+Icon=evo_nodes128
+MimeType=x-scheme-handler/evo_nodes;
+Categories=Office;Finance;
+StartupWMClass=EVO_Nodes-qt

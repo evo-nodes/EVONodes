@@ -1,0 +1,33 @@
+# /etc/conf.d/evo_nodesd: config file for /etc/init.d/evo_nodesd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/evo_nodes/evonodes.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/evo_nodesd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/evo_nodesd.pid"
+
+# Where to write evo_nodesd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/evo_nodesd"
+
+# User and group to own evo_nodesd process
+#BITCOIND_USER="evo_nodes"
+#BITCOIND_GROUP="evo_nodes"
+
+# Path to evo_nodesd executable
+#BITCOIND_BIN="/usr/bin/evo_nodesd"
+
+# Nice value to run evo_nodesd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BITCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for bitcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=60

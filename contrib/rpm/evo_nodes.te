@@ -1,0 +1,81 @@
+policy_module(evo_nodes, 1.100.1)
+
+########################################
+#
+# Declarations
+#
+
+type evo_nodes_t;
+type evo_nodes_exec_t;
+init_daemon_domain(evo_nodes_t, evo_nodes_exec_t)
+
+permissive evo_nodes_t;
+
+type evo_nodes_initrc_exec_t;
+init_script_file(evo_nodes_initrc_exec_t)
+
+type evo_nodes_conf_t;
+files_type(evo_nodes_conf_t)
+
+type evo_nodes_var_lib_t;
+files_type(evo_nodes_var_lib_t)
+
+type evo_nodes_var_run_t;
+files_type(evo_nodes_var_run_t)
+
+type evo_nodes_port_t;
+corenet_port(evo_nodes_port_t)
+
+########################################
+#
+# evo_nodes local policy
+#
+allow evo_nodes_t self:process { fork };
+
+allow evo_nodes_t self:fifo_file rw_fifo_file_perms;
+allow evo_nodes_t self:unix_stream_socket create_stream_socket_perms;
+
+manage_dirs_pattern(evo_nodes_t, evo_nodes_conf_t, evo_nodes_conf_t)
+manage_files_pattern(evo_nodes_t, evo_nodes_conf_t, evo_nodes_conf_t)
+
+manage_dirs_pattern(evo_nodes_t, evo_nodes_var_lib_t, evo_nodes_var_lib_t)
+manage_files_pattern(evo_nodes_t, evo_nodes_var_lib_t, evo_nodes_var_lib_t)
+files_var_lib_filetrans(evo_nodes_t, evo_nodes_var_lib_t, { dir file })
+
+manage_dirs_pattern(evo_nodes_t, evo_nodes_var_run_t, evo_nodes_var_run_t)
+manage_files_pattern(evo_nodes_t, evo_nodes_var_run_t, evo_nodes_var_run_t)
+
+sysnet_dns_name_resolve(evo_nodes_t)
+corenet_all_recvfrom_unlabeled(evo_nodes_t)
+
+allow evo_nodes_t self:tcp_socket create_stream_socket_perms;
+corenet_tcp_sendrecv_generic_if(evo_nodes_t)
+corenet_tcp_sendrecv_generic_node(evo_nodes_t)
+corenet_tcp_sendrecv_all_ports(evo_nodes_t)
+corenet_tcp_bind_generic_node(evo_nodes_t)
+
+gen_require(`
+    type evo_nodes_port_t;
+')
+allow evo_nodes_t evo_nodes_port_t:tcp_socket name_bind;
+
+gen_require(`
+    type evo_nodes_port_t;
+')
+allow evo_nodes_t evo_nodes_port_t:tcp_socket name_connect;
+
+domain_use_interactive_fds(evo_nodes_t)
+
+files_read_etc_files(evo_nodes_t)
+
+miscfiles_read_localization(evo_nodes_t)
+
+sysnet_dns_name_resolve(evo_nodes_t)
+
+allow evo_nodes_t evo_nodes_exec_t:file execute_no_trans;
+allow evo_nodes_t self:process setsched;
+corecmd_exec_ls(evo_nodes_t)
+corenet_tcp_connect_http_port(evo_nodes_t)
+dev_read_urand(evo_nodes_t)
+fs_getattr_xattr_fs(evo_nodes_t)
+kernel_read_system_state(evo_nodes_t)

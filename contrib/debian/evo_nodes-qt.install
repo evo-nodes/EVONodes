@@ -1,0 +1,6 @@
+usr/local/bin/evo_nodes-qt usr/bin
+share/pixmaps/evo_nodes32.xpm usr/share/pixmaps
+share/pixmaps/evo_nodes16.xpm usr/share/pixmaps
+share/pixmaps/evo_nodes128.png usr/share/pixmaps
+debian/evo_nodes-qt.desktop usr/share/applications
+debian/evo_nodes-qt.protocol usr/share/kde4/services/

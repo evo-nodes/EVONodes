@@ -1,0 +1,3 @@
+usr/local/bin/evo_nodesd usr/bin
+usr/local/bin/evo_nodes-cli usr/bin
+debian/examples/evonodes.conf etc/evo_nodes

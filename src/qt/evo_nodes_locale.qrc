@@ -1,0 +1,18 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bn">locale/evo_nodes_bn.qm</file>
+        <file alias="de">locale/evo_nodes_de.qm</file>
+        <file alias="en">locale/evo_nodes_en.qm</file>
+        <file alias="es">locale/evo_nodes_es.qm</file>
+        <file alias="es_ES">locale/evo_nodes_es_ES.qm</file>
+        <file alias="fa">locale/evo_nodes_fa.qm</file>
+        <file alias="fr_FR">locale/evo_nodes_fr_FR.qm</file>
+        <file alias="hr_HR">locale/evo_nodes_hr_HR.qm</file>
+        <file alias="ko_KR">locale/evo_nodes_ko_KR.qm</file>
+        <file alias="nl">locale/evo_nodes_nl.qm</file>
+        <file alias="pl">locale/evo_nodes_pl.qm</file>
+        <file alias="pt">locale/evo_nodes_pt.qm</file>
+        <file alias="pt_BR">locale/evo_nodes_pt_BR.qm</file>
+        <file alias="sv">locale/evo_nodes_sv.qm</file>
+    </qresource>
+</RCC>

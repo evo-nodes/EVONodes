@@ -1,0 +1,11 @@
+[Protocol]
+exec=evo_nodes-qt '%u'
+protocol=evo_nodes
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

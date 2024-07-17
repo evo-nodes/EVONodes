@@ -1,0 +1,75 @@
+// Copyright (c) 2018-2021 The PIVX Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef EVONODES_VALID_OUTPOINTS_JSON_H
+#define EVONODES_VALID_OUTPOINTS_JSON_H
+#include <string>
+
+std::string LoadValidStakingAddresses() {
+	std::string str = "[\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a9146304fbc80c99bcf1a5f901598a28b353fb02968c88ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a9147589e20dfacfde43822bcdc8b56b875a51d11ea788ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a914cbe1c951d0433add98cc55621c14274ffa461a9588ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a9140d8d6cee5d3488b445514ab16ba0d7bfb8d9b86d88ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a914a94a4bca125a7dc2cbc2bf00e87e332a9d05deb288ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a914e200e6c89605299357e6d2a874b69e6ba5e5edc788ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a9141e92d765f5648c640c31a1828b1a3dd0fc33141e88ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a9145220d266c9b2cc3b847c81b8f1c40137e0f529c688ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a91489c6eb0d0546144b8d712c6c36e92f5420be0ee188ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a9148e0051ca812c99587e719782f843ccf994bb5f3d88ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a9140dfd847bcb373daebe52a0ae7d9378b3e21fb38888ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a9144333fa8595b5c2f3dc17f64f9faf3e0b48ba9eac88ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a9149e5f5b38c2ca04d8d6a7f42d2ae18194ca56223188ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a9149b0c9a3a35bf8be4a0adeb9613908e208d49ccc388ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a91489c2a6a9d9177fe5155f45f1f17b30d68f3d84e488ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a9146d16be1b2ecde7b07b37212fa5f60fe251d222ff88ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a91443710474002a14355937af31ed36045db6449d2c88ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a914092d90fe922d24eff321e75379f75e7d0de4462988ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a914f1de318143c2fa63936cb7ea940a5f49229777c888ac\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"scriptpubkey\": \"76a914655b6b08fcb0a9c5870677f2003627087c3684a888ac\"\n"
+            "  }\n"
+            "]";
+    return str;
+}
+
+#endif // EVONODES_VALID_OUTPOINTS_JSON_H
