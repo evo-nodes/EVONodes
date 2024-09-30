@@ -1,6 +1,6 @@
 # EVONodes
 
-<p> EVONodes utilizes a Proof of Stake (PoS) consensus system algorithm, allowing all owners of EVO to participate in earning block rewards while securing the network and operating Masternodes thereby generating passive income.<p>
+
 
   
   
