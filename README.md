@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td>Premine Coins</td>
-<td>10,00,000 EVO</td>
+<td>1,000,000 EVO</td>
 </tr>
 <tr>
 <td>Minimum Stake Age</td>
